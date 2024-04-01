@@ -1,0 +1,5 @@
+counter/*.txt
+fonts/
+media/
+*.jpg
+*.png
