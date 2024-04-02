@@ -648,3 +648,57 @@ details[open] .btn-expand::after {
     background-image: url(/img/bg6.jpg);
   }
 }
+.ny-bauble {
+	position: absolute;
+	animation: swing infinite ease-in-out;
+	transform-origin: top;
+}
+.ny-ball {
+	width: 16px;
+	height: 16px;
+	border-radius: 50%;
+}
+.ny-thread {
+	width: 1px;
+	background: grey;
+	margin: auto;
+}
+.ny-ball-blue {
+	top: 12px;
+	left: 10rem;
+  animation-duration: 4s;
+}
+.ny-ball-blue .ny-ball {
+	background: radial-gradient(at 40% 40%, lightblue, blue 70%);
+}
+.ny-ball-blue .ny-thread {
+	height: 20px;
+}
+.ny-ball-red {
+	top: 9px;
+	left: 16rem;
+	animation-duration: 3s;
+}
+.ny-ball-red .ny-ball {
+	background: radial-gradient(at 40% 40%, #fcc, red 70%);
+}
+.ny-ball-red .ny-thread {
+	height: 15px;
+}
+.ny-branch {
+	position: absolute;
+	top: -20px;
+	left: 14rem;
+	z-index: -1;
+}
+.ny-snow-text {
+	text-shadow: 0 -2px 2px deepskyblue, 0 -3px 2px white;
+}
+@keyframes swing {
+	0%, 100% {
+		transform: rotate(-10deg);
+	}
+	50% {
+		transform: rotate(10deg);
+	}
+}

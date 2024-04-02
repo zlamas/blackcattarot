@@ -21,7 +21,18 @@
   <input class="nav-menu-toggle" id="menu-toggle" type="checkbox">
   <label class="nav-burger" for="menu-toggle"><span></span><span></span><span></span></label>
   <nav class="header-nav">
-    <a class="nav-link nav-title" href="/" title="На главную">Black Cat Tarot</a>
+    <a class="nav-link nav-title ny-snow-text" href="/" title="На главную">
+      <span>Black Cat Tarot</span>
+      <div class="ny-bauble ny-ball-blue">
+        <div class="ny-thread"></div>
+        <div class="ny-ball"></div>
+      </div>
+        <div class="ny-bauble ny-ball-red">
+        <div class="ny-thread"></div>
+        <div class="ny-ball"></div>
+      </div>
+      <img class="ny-branch" src="/img/branch.png" alt>
+    </a>
     <div class="nav-list">
       <a class="nav-link nav-list-link" href="/school" title="Обучение">Обучение</a>
       <a class="nav-link nav-list-link" href="/amulets" title="Амулеты">Амулеты</a>
