@@ -13,13 +13,26 @@
 <link rel="manifest" href="manifest.json">
 <link rel="preload" href="/fonts/edo.woff2" as="font" crossorigin>
 <link rel="stylesheet" href="/css/common.css?v=2">
-<link rel="stylesheet" href="/css/main.css?v=12">
+<link rel="stylesheet" href="/css/main.css?v=13">
 
 <header class="header">
   <input class="nav-menu-toggle" id="menu-toggle" type="checkbox">
   <label class="nav-burger" for="menu-toggle"><span></span><span></span><span></span></label>
   <nav class="header-nav">
-    <a class="nav-link nav-title" href="/" title="На главную">Black Cat Tarot</a>
+    <a class="nav-link nav-title" href="/" title="На главную">
+      <span class="ny-snow-text">
+          <span>Black Cat Tarot</span>
+          <div class="ny-bauble ny-ball-blue">
+            <div class="ny-thread"></div>
+            <div class="ny-ball"></div>
+          </div>
+            <div class="ny-bauble ny-ball-red">
+            <div class="ny-thread"></div>
+            <div class="ny-ball"></div>
+          </div>
+          <img class="ny-branch" src="/img/branch.png" alt>
+      </span>
+    </a>
     <div class="nav-list">
       <a class="offer-flash" href="/#offer">НОВОЕ!</a>
       <a class="nav-link nav-list-link" href="/school" title="Обучение">Обучение</a>
