@@ -1,5 +1,5 @@
-counter/*.txt
 fonts/
 media/
+*.ico
 *.jpg
 *.png

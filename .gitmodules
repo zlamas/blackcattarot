@@ -1,0 +1,6 @@
+[submodule "gallery"]
+	path = gallery
+	url = https://github.com/zlamas/gallery-webapp.git
+[submodule "projector"]
+	path = projector
+	url = https://github.com/zlamas/astral-projector.git
