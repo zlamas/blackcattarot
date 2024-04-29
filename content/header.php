@@ -22,7 +22,6 @@
 	<nav class="header-nav">
 		<a class="nav-link nav-title" title="На главную" href="/">Black Cat Tarot</a>
 		<div class="nav-list">
-			<a class="nav-link nav-list-link" href="/services">Консультации</a>
 			<a class="nav-link nav-list-link" href="/school">Обучение</a>
 			<a class="nav-link nav-list-link" href="/amulets">Амулеты</a>
 			<a class="nav-link nav-list-link" href="/projector">Астральный Проектор</a>
