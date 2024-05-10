@@ -1,6 +1,6 @@
 <?php
 
-$title = 'Заказать амулет';
+$title = 'Сделать заказ';
 
 require_once '../content/header.php';
 require_once '../content/order.html';

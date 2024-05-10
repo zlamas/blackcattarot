@@ -13,8 +13,11 @@ a {
 	color: inherit;
 }
 h1 {
-	font: 3rem "Edo", sans-serif;
+	font: 5rem "Edo", sans-serif;
 	margin: 40px 0;
+}
+h2 {
+	font-size: 1.7rem;
 }
 p {
 	text-align: left;
@@ -28,6 +31,31 @@ svg {
 }
 svg {
 	fill: currentcolor;
+}
+ul {
+	list-style: none;
+	padding: 0;
+}
+.section {
+	width: 100%;
+	max-width: 960px;
+	margin: 70px auto;
+	padding: 0 10px;
+}
+.section > h2 {
+	font: 2rem "Edo", sans-serif;
+	margin: 50px 0;
+}
+.block {
+	border: 1px solid;
+	padding: 24px;
+}
+.block h2 {
+	font-family: inherit;
+	font-weight: 700;
+	letter-spacing: 3px;
+	margin: 0 0 24px;
+	text-transform: uppercase;
 }
 .accent-drop-shadow {
 	filter: drop-shadow(0 0 5px);
@@ -88,7 +116,7 @@ details[open] .btn-expand::after {
 }
 .carousel {
 	height: 80vh;
-	font-size: 1.25rem;
+	font-size: 2rem;
 	text-shadow: 0 0 3px black;
 }
 .carousel-slide {
@@ -103,24 +131,24 @@ details[open] .btn-expand::after {
 	margin-right: 6px;
 }
 .gallery {
-	display: table;
-	border-radius: 18px;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
 	margin: 50px auto;
 }
 .gallery-img {
 	width: 100%;
-	min-width: 0;
-	margin: 3px;
+	height: 100%;
 	object-fit: cover;
 }
-.gallery-zoom-item {
-	display: flex;
-	cursor: zoom-in;
-	flex: 1;
+.gallery-item {
+	max-width: 400px;
+	flex: 1 1 240px;
+	margin: 3px;
 }
 .glow-rounded,
+.block,
 .gallery-img,
-.section-block,
 .video {
 	border-radius: 15px;
 	box-shadow: 0 0 6px;
@@ -129,12 +157,8 @@ details[open] .btn-expand::after {
 	display: flex;
 	height: 48px;
 	overflow: hidden;
-	margin: 0 12px;
+	margin: 0 8px;
 	white-space: nowrap;
-}
-.header-nav,
-.nav-list {
-	flex-direction: column;
 }
 .nav-menu-toggle:checked ~ .header-nav {
 	height: auto;
@@ -143,10 +167,14 @@ details[open] .btn-expand::after {
 	color: darkorange;
 	font-weight: 700;
 }
+.hr-gradient {
+	height: 1px;
+	background: linear-gradient(to right, transparent, currentcolor, transparent);
+	margin: 6px 0;
+}
 .image-aside {
 	display: flex;
 	align-items: center;
-	flex-direction: column;
 	gap: 16px 32px;
 }
 .image-aside > img {
@@ -157,7 +185,6 @@ details[open] .btn-expand::after {
 	display: table;
 	font-weight: 700;
 	margin: 1rem auto;
-	padding: 0;
 	text-align: left;
 }
 .list-checkmark li {
@@ -202,7 +229,7 @@ details[open] .btn-expand::after {
 }
 .nav-link {
 	position: relative;
-	margin: 12px;
+	margin: 12px 8px;
 	transition: color 0.3s;
 }
 .nav-list {
@@ -270,26 +297,6 @@ details[open] .btn-expand::after {
 .school-level-summary {
 	font-weight: 700;
 }
-.section {
-	width: 100%;
-	max-width: 960px;
-	margin: 70px auto;
-}
-.section h2 {
-	font: 2rem "Edo", sans-serif;
-	margin: 50px 0;
-}
-.section-block {
-	border: 1px solid;
-	padding: 24px;
-}
-.section-block h2 {
-	font-family: inherit;
-	font-weight: 700;
-	letter-spacing: 3px;
-	margin: 0 0 24px;
-	text-transform: uppercase;
-}
 .section-mustarot {
 	display: flex;
 	align-items: flex-end;
@@ -301,7 +308,7 @@ details[open] .btn-expand::after {
 	width: 100%;
 	background-position: center;
 	background-size: auto 100%;
-	margin: revert;
+	margin: 1rem 0;
 	-webkit-mask: linear-gradient(to right, transparent, black 10% 90%, transparent);
 	mask: linear-gradient(to right, transparent, black 10% 90%, transparent);
 	padding: 10px 0;
@@ -339,6 +346,9 @@ details[open] .btn-expand::after {
 	min-width: 100%;
 	scroll-snap-align: start;
 }
+.slide .gallery-item {
+	flex: 1;
+}
 /* ugly hack to fix sliders in chrome */
 .slider .slide-wrapper {
 	margin-top: -0.05px;
@@ -367,7 +377,6 @@ details[open] .btn-expand::after {
 	z-index: 2;
 }
 .slide-title {
-	flex: 1;
 	font-size: 1.5em;
 	font-weight: 700;
 	letter-spacing: 5px;
@@ -415,6 +424,9 @@ details[open] .btn-expand::after {
 .slider::after {
 	right: 0;
 }
+.slider:not(.carousel) .slide-wrapper {
+	border-radius: 18px;
+}
 .slider-nav {
 	position: absolute;
 	width: 100%;
@@ -461,10 +473,11 @@ details[open] .btn-expand::after {
 	max-width: 100%;
 	margin: 70px auto;
 }
+.zoom-in {
+	cursor: zoom-in;
+}
 .footer {
-	border-top: 1px solid #222;
 	color: darkgrey;
-	padding: 6px;
 }
 .footer-text {
 	font-size: 0.75rem;
@@ -556,26 +569,36 @@ details[open] .btn-expand::after {
 		background: #fc0;
 	}
 }
-@media screen and (min-width: 1024px) {
+/* mobile */
+@media screen and (max-width: 1023px) {
 	h1 {
-		font-size: 5rem;
+		font-size: 3rem;
+	}
+	.block {
+		padding: 16px;
 	}
 	.carousel {
-		font-size: 2rem;
+		font-size: 1.25rem;
 	}
 	.image-aside,
 	.header-nav,
 	.nav-list {
-		flex-direction: row;
+		flex-direction: column;
 	}
+	.gallery-img {
+		max-height: 250px;
+	}
+	.slide-title {
+		flex: 1;
+	}
+}
+/* desktop */
+@media screen and (min-width: 1024px) {
 	.row-reverse {
 		flex-direction: row-reverse;
 	}
 	.nav-burger {
 		display: none;
-	}
-	.slide-title {
-		flex: 0;
 	}
 }
 @media screen and (min-width: 800px) {

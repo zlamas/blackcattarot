@@ -1,4 +1,4 @@
-<?php require_once __DIR__ . '/../counter/counter.php' ?>
+<?php require_once $_SERVER['DOCUMENT_ROOT'].'/counter/counter.php' ?>
 <!doctype html>
 <html lang="ru">
 <title><?php if (isset($title)) echo $title.' - ' ?>Официальный сайт таролога Екатерины Нагорной | Таро-консультации, обучение картам Таро</title>
@@ -24,6 +24,7 @@
 		<div class="nav-list">
 			<a class="nav-link nav-list-link" href="/school">Обучение</a>
 			<a class="nav-link nav-list-link" href="/amulets">Амулеты</a>
+			<a class="nav-link nav-list-link" href="/mustarot">МузТаро</a>
 			<a class="nav-link nav-list-link" href="/projector">Астральный Проектор</a>
 		</div>
 		<div class="flex-center">
@@ -40,6 +41,7 @@
 				<svg class="nav-icon"><use href="/img/zen.svg?v=1#svg"/></svg>
 			</a>
 		</div>
+		<div class="hr-gradient"></div>
 	</nav>
 </header>
 <main class="main">
