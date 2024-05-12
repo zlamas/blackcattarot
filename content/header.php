@@ -14,7 +14,7 @@
 <meta name="theme-color" content="#000000">
 <link rel="preload" href="/fonts/edo.woff2" as="font" crossorigin>
 <link rel="stylesheet" href="/css/common.css">
-<link rel="stylesheet" href="/css/main.css?14">
+<link rel="stylesheet" href="/css/main.css?15">
 
 <header class="header">
 	<input class="nav-menu-toggle" id="menu-toggle" type="checkbox">
@@ -24,6 +24,7 @@
 		<div class="nav-list">
 			<a class="nav-link nav-list-link" href="/school">Обучение</a>
 			<a class="nav-link nav-list-link" href="/amulets">Амулеты</a>
+			<a class="nav-link nav-list-link" href="/decorations">Магия камней</a>
 			<a class="nav-link nav-list-link" href="/mustarot">МузТаро</a>
 			<a class="nav-link nav-list-link" href="/projector">Астральный Проектор</a>
 		</div>

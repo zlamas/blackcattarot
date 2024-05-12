@@ -57,6 +57,15 @@ ul {
 	margin: 0 0 24px;
 	text-transform: uppercase;
 }
+.breadcrumb ul {
+	display: flex;
+	flex-wrap: wrap;
+	margin: 1rem;
+}
+.breadcrumb li:not(:last-child)::after {
+	content: "/";
+	margin: 0 0.5em;
+}
 .accent-drop-shadow {
 	filter: drop-shadow(0 0 5px);
 }
@@ -181,6 +190,34 @@ details[open] .btn-expand::after {
 	max-width: 250px;
 	flex-shrink: 0;
 }
+.item-list {
+	display: grid;
+	grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+}
+.item-list .gallery-item {
+	display: flex;
+	position: relative;
+	height: 300px;
+	flex-direction: column;
+	margin: 10px;
+	overflow: hidden;
+	text-shadow: 0 0 5px black;
+}
+.item-list .gallery-item::before {
+	content: "";
+	position: absolute;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	background-position: center;
+	background-size: cover;
+	transition: transform 0.5s;
+	z-index: -1;
+}
+.item-list h2 {
+	margin: auto;
+}
 .list-checkmark {
 	display: table;
 	font-weight: 700;
@@ -290,7 +327,7 @@ details[open] .btn-expand::after {
 }
 .offer-title::before,
 .offer-title::after {
-	content: "🎵";
+	content: "💎";
 	font-size: 1.2em;
 	margin: 0 0.3em;
 }
@@ -523,6 +560,18 @@ details[open] .btn-expand::after {
 .carousel-main-6 .slide-action {
 	background: linear-gradient(to right, red, darkred);
 }
+.decoration-1::before {
+	background-image: url(/img/gallery/decorations/decoration1.jpg);
+}
+.decoration-2::before {
+	background-image: url(/img/gallery/decorations/decoration2.jpg);
+}
+.decoration-3::before {
+	background-image: url(/img/gallery/decorations/decoration3.jpg);
+}
+.decoration-4::before {
+	background-image: url(/img/gallery/decorations/decoration4.jpg);
+}
 .text-center {
 	text-align: center;
 }
@@ -556,6 +605,9 @@ details[open] .btn-expand::after {
 	.btn:not(.slide-action):hover {
 		color: magenta;
 	}
+	.item-list .gallery-item:hover::before {
+		transform: scale(1.1);
+	}
 	.nav-link:hover {
 		color: darkorange;
 	}
@@ -576,6 +628,9 @@ details[open] .btn-expand::after {
 	}
 	.block {
 		padding: 16px;
+	}
+	.breadcrumb {
+		font-size: 0.9em;
 	}
 	.carousel {
 		font-size: 1.25rem;

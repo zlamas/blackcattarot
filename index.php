@@ -1,7 +1,4 @@
 <?php
 
-$description = 'Меня зовут Екатерина Нагорная. Я журналист, писатель, психолог и просто женщина с широким кругом общения. Судьба развернула меня и поставила на путь истинный — занялась таро профессионально. Я делаю свой вклад в помощь людям, оказавшимся в сложных жизненных ситуациях.';
-
-require_once 'content/header.php';
-require_once 'content/main.html';
-require_once 'content/footer.php';
+$page = 'main';
+require_once 'content.php';
