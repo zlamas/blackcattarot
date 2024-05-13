@@ -6,6 +6,6 @@
 	<div>© 2024 Black Cat Tarot. Все права защищены</div>
 	<div><?= "$unique_hits | $hits" ?></div>
 	<div class="to-top-track">
-		<a class="to-top" title="Вернуться наверх" href="#top"><img class="to-top-icon rounded" src="/img/arrow_top.svg" alt="Вернуться наверх"></a>
+		<a class="to-top" href="#top" title="Вернуться наверх"><img class="to-top-icon rounded" src="/img/arrow_top.svg" alt="Вернуться наверх"></a>
 	</div>
 </footer>

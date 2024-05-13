@@ -273,14 +273,18 @@ details[open] .btn-expand::after {
 	display: flex;
 	font-weight: 700;
 	margin: auto;
-	overflow: auto;
+	overflow: hidden;
+}
+.nav-list-link:last-child {
+	overflow: hidden;
+	text-overflow: ellipsis;
 }
 .nav-list-link::after {
 	content: "";
 	display: block;
-	position: absolute;
 	width: 0;
 	border-top: 2px solid;
+	margin: auto;
 	transition: width 0.3s;
 }
 .nav-burger {
