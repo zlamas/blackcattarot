@@ -273,6 +273,7 @@ details[open] .btn-expand::after {
 	display: flex;
 	font-weight: 700;
 	margin: auto;
+	overflow: auto;
 }
 .nav-list-link::after {
 	content: "";
@@ -338,7 +339,6 @@ details[open] .btn-expand::after {
 	display: flex;
 	align-items: flex-end;
 	flex-wrap: wrap;
-	gap: 16px;
 	justify-content: center;
 }
 .section-mustarot h2 {
@@ -350,29 +350,16 @@ details[open] .btn-expand::after {
 	mask: linear-gradient(to right, transparent, black 10% 90%, transparent);
 	padding: 10px 0;
 }
-.bg-majors {
-	background-image: url(/img/bg-crown.svg);
-}
-.bg-wands {
-	background-image: url(/img/bg-wand.svg);
-}
-.bg-cups {
-	background-image: url(/img/bg-cup.svg);
-}
-.bg-swords {
-	background-image: url(/img/bg-sword.svg);
-}
-.bg-pentacles {
-	background-image: url(/img/bg-pentacle.svg);
-}
-.section-mustarot figure,
-.section-mustarot .video {
+.section-mustarot figure {
 	width: 160px;
-	margin: 0;
+	margin: 8px;
 }
 .section-mustarot figcaption {
 	font: 1.5rem "Edo", sans-serif;
 	margin-bottom: 6px;
+}
+.section-mustarot .video {
+	margin: 0;
 }
 .section-img {
 	width: 100%;
@@ -520,6 +507,21 @@ details[open] .btn-expand::after {
 	font-size: 0.75rem;
 	font-style: italic;
 	margin: 0 auto;
+}
+.bg-majors {
+	background-image: url(/img/bg-crown.svg);
+}
+.bg-wands {
+	background-image: url(/img/bg-wand.svg);
+}
+.bg-cups {
+	background-image: url(/img/bg-cup.svg);
+}
+.bg-swords {
+	background-image: url(/img/bg-sword.svg);
+}
+.bg-pentacles {
+	background-image: url(/img/bg-pentacle.svg);
 }
 .carousel-main-1 {
 	background-image: url(/img/m-bg1.jpg);
