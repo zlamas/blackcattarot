@@ -5,7 +5,7 @@ if (!isset($page)) {
 }
 $content_dir = $_SERVER['DOCUMENT_ROOT'].'/content/';
 
-if (!file_exists($content_dir."{$page}.html")) {
+if (!file_exists($content_dir.$page.'.html')) {
 	http_response_code(404);
 	$page = '404';
 }
@@ -49,5 +49,5 @@ switch ($page) {
 }
 
 require_once $content_dir.'header.php';
-require_once $content_dir."{$page}.html";
+require_once $content_dir.$page.'.html';
 require_once $content_dir.'footer.php';
