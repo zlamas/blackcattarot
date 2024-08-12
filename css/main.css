@@ -322,7 +322,8 @@ details[open] .btn-expand::after {
 	margin: 0;
 }
 .offer-flash {
-	animation: 2s flash infinite;
+	animation: 2s flash infinite ease-in-out;
+	color: red;
 	padding: 0 0.3em;
 }
 .offer-title {
@@ -593,13 +594,8 @@ details[open] .btn-expand::after {
 	}
 }
 @keyframes flash {
-	0%, 100% {
-		border-color: red;
-		color: red;
-	}
 	50% {
-		border-color: lime;
-		color: lime;
+		filter: invert() hue-rotate(-60deg);
 	}
 }
 @keyframes zoom-in {
