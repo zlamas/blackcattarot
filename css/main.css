@@ -584,7 +584,7 @@ details[open] .btn-expand::after {
 }
 @keyframes flash {
   50% {
-    filter: invert() hue-rotate(-60deg);
+    filter: invert(1) hue-rotate(-60deg);
   }
 }
 @keyframes zoom-in {

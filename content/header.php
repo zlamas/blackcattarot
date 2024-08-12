@@ -15,7 +15,7 @@
 <meta name="theme-color" content="#000000">
 <link rel="preload" href="/fonts/edo.woff2" as="font" crossorigin>
 <link rel="stylesheet" href="/css/common.css">
-<link rel="stylesheet" href="/css/main.css?18">
+<link rel="stylesheet" href="/css/main.css?19">
 
 <header class="header">
   <input class="nav-menu-toggle" id="menu-toggle" type="checkbox">
