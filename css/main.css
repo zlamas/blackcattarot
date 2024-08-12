@@ -378,17 +378,6 @@ details[open] .btn-expand::after {
 .slide .gallery-item {
 	flex: 1;
 }
-/* ugly hack to fix sliders in chrome */
-.slider .slide-wrapper {
-	margin-top: -0.05px;
-}
-.slider .slide:last-child {
-	margin-top: 0.04px;
-}
-.slider .slide:nth-child(2n) {
-	margin-top: 0.02px;
-}
-/* hack end */
 .slide-action {
 	height: 2em;
 	border: 0;
