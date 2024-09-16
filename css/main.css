@@ -34,6 +34,7 @@ svg {
 ul {
   list-style: none;
   padding: 0;
+  text-align: left;
 }
 .section {
   width: 100%;
@@ -217,11 +218,14 @@ details[open] .btn-expand::after {
 .item-list h2 {
   margin: auto;
 }
+.list {
+  list-style: disc;
+  margin-left: 1em;
+}
 .list-checkmark {
   display: table;
   font-weight: 700;
   margin: 1rem auto;
-  text-align: left;
 }
 .list-checkmark li {
   display: flex;
@@ -258,6 +262,13 @@ details[open] .btn-expand::after {
   color: transparent;
   -webkit-background-clip: text;
   background-clip: text;
+  flex-wrap: wrap;
+}
+.mustarot-title::before,
+.mustarot-title::after {
+  content: "🎵";
+  margin: 0 0.3em;
+  font-size: 0.9em;
 }
 .nav-icon {
   width: 24px;
@@ -319,11 +330,6 @@ details[open] .btn-expand::after {
   animation: 2s ease-in-out infinite flash;
   color: red;
   padding: 0 0.3em;
-}
-.offer-title {
-  display: flex;
-  justify-content: center;
-  align-items: center;
 }
 .offer-title::before,
 .offer-title::after {
@@ -475,10 +481,12 @@ details[open] .btn-expand::after {
   z-index: 5;
 }
 .video {
-  display: block;
-  width: 800px;
-  max-width: 100%;
+  max-width: 800px;
   margin: 70px auto;
+}
+.video:not(.video-vertical) {
+  display: block;
+  width: 100%;
 }
 .zoom-in {
   cursor: zoom-in;
