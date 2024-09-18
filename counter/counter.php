@@ -5,9 +5,28 @@ session_start();
 $counter = __DIR__ . '/hits.txt';
 $counter_unique = __DIR__ . '/hits_unique.txt';
 
-$hits = file_get_contents($counter) + 1;
+$hits = file_get_contents($counter);
 $unique_hits = file_get_contents($counter_unique);
 
+$filter_words = implode('|', [
+  'google',
+  'bot',
+  'spider',
+  'crawl',
+  'search',
+  'AHC/',
+  'curl',
+  'Go-http-client',
+  'python',
+  'validator',
+  '^-$',
+]);
+
+if (preg_match("#{$filter_words}#i", $_SERVER['HTTP_USER_AGENT'])) {
+    return;
+}
+
+$hits++;
 file_put_contents($counter, $hits);
 
 if (!isset($_SESSION['counter'])) {
