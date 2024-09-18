@@ -1,3 +1,19 @@
+BrowserMatchNoCase AhrefsBot bad_bot
+BrowserMatchNoCase BackupLand bad_bot
+BrowserMatchNoCase Bytespider bad_bot
+BrowserMatchNoCase CensysInspect bad_bot
+BrowserMatchNoCase DataForSeoBot bad_bot
+BrowserMatchNoCase GPTBot bad_bot
+BrowserMatchNoCase InternetMeasurement bad_bot
+BrowserMatchNoCase keys-so-bot bad_bot
+BrowserMatchNoCase l9scan bad_bot
+BrowserMatchNoCase "Screaming Frog SEO Spider" bad_bot
+BrowserMatchNoCase serpstatbot bad_bot
+
+Order Allow,Deny
+Allow from ALL
+Deny from env=bad_bot
+
 RewriteEngine on
 RewriteCond %{HTTP_HOST} ^www\.(.*)$ [NC]
 RewriteRule ^ %{REQUEST_SCHEME}://%1%{REQUEST_URI} [R=301,L]
