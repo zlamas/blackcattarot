@@ -21,9 +21,6 @@ h2 {
 p {
   text-align: left;
 }
-summary::-webkit-details-marker {
-  display: none;
-}
 img,
 svg {
   display: block;
@@ -260,7 +257,6 @@ details[open] .btn-expand::after {
 .mustarot-title {
   background: linear-gradient(to right, blue, fuchsia);
   color: transparent;
-  -webkit-background-clip: text;
   background-clip: text;
   flex-wrap: wrap;
 }
@@ -351,7 +347,6 @@ details[open] .btn-expand::after {
   background-position: center;
   background-size: auto 100%;
   margin: 1rem 0;
-  -webkit-mask: linear-gradient(to right, transparent, black 10% 90%, transparent);
   mask: linear-gradient(to right, transparent, black 10% 90%, transparent);
   padding: 10px 0;
 }
@@ -406,9 +401,6 @@ details[open] .btn-expand::after {
   scroll-behavior: smooth;
   scroll-snap-type: x mandatory;
   scrollbar-width: none;
-}
-.slide-wrapper::-webkit-scrollbar {
-  display: none;
 }
 .slider {
   position: relative;
