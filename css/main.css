@@ -229,7 +229,7 @@ details[open] .btn-expand::after {
   align-items: baseline;
 }
 .list-checkmark li::before {
-  content: '✓';
+  content: "✓";
   font-size: 1.2em;
   margin-right: 0.5em;
 }
