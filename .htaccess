@@ -2,13 +2,19 @@ BrowserMatchNoCase AhrefsBot bad_bot
 BrowserMatchNoCase BackupLand bad_bot
 BrowserMatchNoCase Bytespider bad_bot
 BrowserMatchNoCase CensysInspect bad_bot
+BrowserMatchNoCase ChatGPT bad_bot
 BrowserMatchNoCase DataForSeoBot bad_bot
 BrowserMatchNoCase GPTBot bad_bot
 BrowserMatchNoCase InternetMeasurement bad_bot
 BrowserMatchNoCase keys-so-bot bad_bot
 BrowserMatchNoCase l9scan bad_bot
+BrowserMatchNoCase NetShelter bad_bot
+BrowserMatchNoCase OAI-SearchBot bad_bot
+BrowserMatchNoCase openai bad_bot
 BrowserMatchNoCase "Screaming Frog SEO Spider" bad_bot
+BrowserMatchNoCase SemrushBot bad_bot
 BrowserMatchNoCase serpstatbot bad_bot
+BrowserMatchNoCase wpbot bad_bot
 
 Order Allow,Deny
 Allow from ALL

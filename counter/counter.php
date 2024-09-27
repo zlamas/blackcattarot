@@ -10,6 +10,7 @@ $unique_hits = file_get_contents($counter_unique);
 
 $filter_words = implode('|', [
   'google',
+  'yandex',
   'bot',
   'spider',
   'crawl',
