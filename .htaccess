@@ -11,7 +11,7 @@ BrowserMatchNoCase l9scan bad_bot
 BrowserMatchNoCase NetShelter bad_bot
 BrowserMatchNoCase OAI-SearchBot bad_bot
 BrowserMatchNoCase openai bad_bot
-BrowserMatchNoCase "Screaming Frog SEO Spider" bad_bot
+BrowserMatchNoCase "Screaming Frog" bad_bot
 BrowserMatchNoCase SemrushBot bad_bot
 BrowserMatchNoCase serpstatbot bad_bot
 BrowserMatchNoCase wpbot bad_bot
@@ -22,6 +22,6 @@ Deny from env=bad_bot
 
 RewriteEngine on
 RewriteCond %{HTTP_HOST} ^www\.(.*)$ [NC]
-RewriteRule ^ %{REQUEST_SCHEME}://%1%{REQUEST_URI} [R=301,L]
+RewriteRule ^(.*)$ https://%1/$1 [R=301,L]
 RewriteCond %{REQUEST_FILENAME} !-d
 RewriteRule ^([^.]+)/?$ /content.php?p=$1 [L]
