@@ -35,6 +35,9 @@ switch ($page) {
     case 'decorations/perlamutr':
         $title = 'Перламутр - Магия камней';
         break;
+    case 'decorations/zhemchug':
+        $title = 'Жемчуг - Магия камней';
+        break;
     case 'mustarot':
         $title = 'Музыкальное Таро';
         break;
