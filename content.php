@@ -1,5 +1,25 @@
 <?php
 
+$titles = [
+    '404' => 'Страница не найдена',
+    'amulets' => 'Амулеты',
+    'decorations' => 'Магия камней',
+    'decorations/tigrovyy-glaz' => 'Тигровый глаз - Магия камней',
+    'decorations/agat' => 'Агат - Магия камней',
+    'decorations/shungit' => 'Шунгит - Магия камней',
+    'decorations/perlamutr' => 'Перламутр - Магия камней',
+    'decorations/zhemchug' => 'Жемчуг - Магия камней',
+    'mustarot' => 'Музыкальное Таро',
+    'order' => 'Сделать заказ',
+    'school' => 'Школа Таро',
+    'services' => 'Расценки',
+    'godovoy' => 'Годовой расклад',
+];
+
+$descriptions = [
+    'main' => 'Меня зовут Екатерина Нагорная. Я журналист, писатель, психолог и просто женщина с широким кругом общения. Судьба развернула меня и поставила на путь истинный — занялась таро профессионально. Я делаю свой вклад в помощь людям, оказавшимся в сложных жизненных ситуациях.',
+];
+
 if (!isset($page)) {
     $page = $_GET['p'];
 }
@@ -10,46 +30,8 @@ if (!file_exists($content_dir.$page.'.html')) {
     $page = '404';
 }
 
-switch ($page) {
-    case 'main':
-        $description = 'Меня зовут Екатерина Нагорная. Я журналист, писатель, психолог и просто женщина с широким кругом общения. Судьба развернула меня и поставила на путь истинный — занялась таро профессионально. Я делаю свой вклад в помощь людям, оказавшимся в сложных жизненных ситуациях.';
-        break;
-    case '404':
-        $title = 'Страница не найдена';
-        break;
-    case 'amulets':
-        $title = 'Амулеты';
-        break;
-    case 'decorations':
-        $title = 'Магия камней';
-        break;
-    case 'decorations/tigrovyy-glaz':
-        $title = 'Тигровый глаз - Магия камней';
-        break;
-    case 'decorations/agat':
-        $title = 'Агат - Магия камней';
-        break;
-    case 'decorations/shungit':
-        $title = 'Шунгит - Магия камней';
-        break;
-    case 'decorations/perlamutr':
-        $title = 'Перламутр - Магия камней';
-        break;
-    case 'decorations/zhemchug':
-        $title = 'Жемчуг - Магия камней';
-        break;
-    case 'mustarot':
-        $title = 'Музыкальное Таро';
-        break;
-    case 'order':
-        $title = 'Сделать заказ';
-        break;
-    case 'school':
-        $title = 'Школа Таро';
-        break;
-    case 'services':
-        $title = 'Расценки';
-}
+$title = $titles[$page];
+$description = $descriptions[$page];
 
 require_once $content_dir.'header.php';
 require_once $content_dir.$page.'.html';

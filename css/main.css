@@ -330,7 +330,7 @@ details[open] .btn-expand::after {
 }
 .offer-title::before,
 .offer-title::after {
-  content: '💎';
+  content: '❄️';
   font-size: 1.2em;
   margin: 0 0.3em;
 }
