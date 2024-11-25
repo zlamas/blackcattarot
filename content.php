@@ -23,6 +23,7 @@ $descriptions = [
 if (!isset($page)) {
     $page = $_GET['p'];
 }
+
 $content_dir = $_SERVER['DOCUMENT_ROOT'].'/content/';
 
 if (!file_exists($content_dir.$page.'.html')) {
@@ -30,8 +31,8 @@ if (!file_exists($content_dir.$page.'.html')) {
     $page = '404';
 }
 
-$title = $titles[$page];
-$description = $descriptions[$page];
+$title = $titles[$page] ?? '';
+$description = $descriptions[$page] ?? '';
 
 require_once $content_dir.'header.php';
 require_once $content_dir.$page.'.html';

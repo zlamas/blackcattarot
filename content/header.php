@@ -1,9 +1,9 @@
 <?php require_once $_SERVER['DOCUMENT_ROOT'].'/counter/counter.php' ?>
 <!doctype html>
 <html lang="ru">
-<title><?php if (isset($title)) echo $title.' - ' ?>Официальный сайт таролога Екатерины Нагорной | Таро-консультации, обучение картам Таро</title>
+<title><?php if ($title !== '') echo $title.' - ' ?>Официальный сайт таролога Екатерины Нагорной | Таро-консультации, обучение картам Таро</title>
 <meta charset="utf-8">
-<?php if (isset($description)) echo "<meta name=\"description\" content=\"$description\">" ?>
+<?php if ($description !== '') echo "<meta name=\"description\" content=\"$description\">" ?>
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <link rel="apple-touch-icon" sizes="180x180" href="/img/apple-touch-icon.png">
 <link rel="icon" href="/favicon.ico">
