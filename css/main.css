@@ -3,7 +3,7 @@
   position: relative;
   background: black;
   color: white;
-  font-family: 'Open Sans', sans-serif;
+  font-family: "Open Sans", sans-serif;
   scroll-behavior: smooth;
   scroll-padding-top: 30vh;
   text-align: center;
@@ -12,7 +12,7 @@ a {
   color: inherit;
 }
 h1 {
-  font: 5rem 'Edo', sans-serif;
+  font: 5rem "Edo", sans-serif;
   margin: 40px 0;
 }
 h2 {
@@ -40,7 +40,7 @@ ul {
   padding: 0 10px;
 }
 .section > h2 {
-  font: 2rem 'Edo', sans-serif;
+  font: 2rem "Edo", sans-serif;
   margin: 50px 0;
 }
 .block {
@@ -60,7 +60,7 @@ ul {
   margin: 1rem;
 }
 .breadcrumb li:not(:last-child)::after {
-  content: '/';
+  content: "/";
   margin: 0 0.5em;
 }
 .accent-drop-shadow {
@@ -97,7 +97,7 @@ ul {
   font-size: 1.5em;
 }
 .btn-expand::after {
-  content: '';
+  content: "";
   height: 100%;
   min-width: 2em;
   background: url(/img/arrow_top.svg) center;
@@ -133,7 +133,7 @@ details[open] .btn-expand::after {
 }
 .drop-cap::first-letter {
   float: left;
-  font: 6rem / 1 'Edo', sans-serif;
+  font: 6rem / 1 "Edo", sans-serif;
   margin-right: 6px;
 }
 .gallery {
@@ -201,7 +201,7 @@ details[open] .btn-expand::after {
   text-shadow: 0 0 5px black;
 }
 .item-list .gallery-item::before {
-  content: '';
+  content: "";
   position: absolute;
   top: 0;
   left: 0;
@@ -230,7 +230,7 @@ details[open] .btn-expand::after {
   align-items: baseline;
 }
 .list-checkmark li::before {
-  content: '✓';
+  content: "✓";
   font-size: 1.2em;
   margin-right: 0.5em;
 }
@@ -263,9 +263,9 @@ details[open] .btn-expand::after {
 }
 .mustarot-title::before,
 .mustarot-title::after {
-  content: '🎵';
-  margin: 0 0.3em;
+  content: "🎵";
   font-size: 0.9em;
+  margin: 0 0.3em;
 }
 .nav-icon {
   width: 24px;
@@ -287,7 +287,7 @@ details[open] .btn-expand::after {
   text-overflow: ellipsis;
 }
 .nav-list-link::after {
-  content: '';
+  content: "";
   display: block;
   width: 0;
   border-top: 2px solid;
@@ -320,7 +320,7 @@ details[open] .btn-expand::after {
 }
 .nav-title {
   align-self: flex-start;
-  font: 2rem / var(--navbar-height) 'Edo', sans-serif;
+  font: 2rem / var(--navbar-height) "Edo", sans-serif;
   padding: 0;
 }
 .offer-flash {
@@ -330,7 +330,7 @@ details[open] .btn-expand::after {
 }
 .offer-title::before,
 .offer-title::after {
-  content: '❄️';
+  content: attr(data-emoji);
   font-size: 1.2em;
   margin: 0 0.3em;
 }
@@ -356,7 +356,7 @@ details[open] .btn-expand::after {
   margin: 8px;
 }
 .section-mustarot figcaption {
-  font: 1.5rem 'Edo', sans-serif;
+  font: 1.5rem "Edo", sans-serif;
   margin-bottom: 6px;
 }
 .section-mustarot .video {
@@ -408,7 +408,7 @@ details[open] .btn-expand::after {
 }
 .slider::before,
 .slider::after {
-  content: '';
+  content: "";
   background:
     url(/img/arrow.svg?2) no-repeat center,
     linear-gradient(to right, transparent, rgba(0, 0, 0, 0.5));
@@ -437,7 +437,7 @@ details[open] .btn-expand::after {
   position: absolute;
   width: 100%;
   background: rgba(0, 0, 0, 0.3);
-  font-family: 'Edo', sans-serif;
+  font-family: "Edo", sans-serif;
   padding: 6px 0;
   z-index: 5;
 }
