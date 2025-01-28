@@ -5,14 +5,12 @@
 <meta charset="utf-8">
 <?php if ($description !== '') echo "<meta name=\"description\" content=\"$description\">" ?>
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<link rel="apple-touch-icon" sizes="180x180" href="/img/apple-touch-icon.png">
-<link rel="icon" href="/favicon.ico">
-<link rel="icon" type="image/png" sizes="32x32" href="/img/favicon-32x32.png">
-<link rel="icon" type="image/png" sizes="16x16" href="/img/favicon-16x16.png">
-<link rel="manifest" href="/manifest.json">
-<link rel="mask-icon" href="/img/safari-pinned-tab.svg" color="#333333">
-<meta name="msapplication-TileColor" content="#da532c">
 <meta name="theme-color" content="#000000">
+<link rel="icon" type="image/png" href="/img/favicon-96x96.png" sizes="96x96">
+<link rel="icon" type="image/svg+xml" href="/img/favicon.svg">
+<link rel="icon" href="/img/favicon.ico">
+<link rel="apple-touch-icon" sizes="180x180" href="/img/apple-touch-icon.png">
+<link rel="manifest" href="manifest.json">
 <link rel="preload" href="/fonts/edo.woff2" as="font" crossorigin>
 <link rel="stylesheet" href="/css/common.css?v=1">
 <link rel="stylesheet" href="/css/main.css?v=8">
