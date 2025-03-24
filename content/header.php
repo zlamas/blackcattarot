@@ -12,8 +12,8 @@
 <link rel="apple-touch-icon" sizes="180x180" href="/img/apple-touch-icon.png">
 <link rel="manifest" href="manifest.json">
 <link rel="preload" href="/fonts/edo.woff2" as="font" crossorigin>
-<link rel="stylesheet" href="/css/common.css?v=1">
-<link rel="stylesheet" href="/css/main.css?v=8">
+<link rel="stylesheet" href="/css/common.css?v=2">
+<link rel="stylesheet" href="/css/main.css?v=11">
 
 <header class="header">
   <input class="nav-menu-toggle" id="menu-toggle" type="checkbox">
@@ -21,13 +21,14 @@
   <nav class="header-nav">
     <a class="nav-link nav-title" href="/" title="На главную">Black Cat Tarot</a>
     <div class="nav-list">
+      <a class="offer-flash" href="/#offer">НОВОЕ!</a>
       <a class="nav-link nav-list-link" href="/school" title="Обучение">Обучение</a>
       <a class="nav-link nav-list-link" href="/amulets" title="Амулеты">Амулеты</a>
       <a class="nav-link nav-list-link" href="/decorations" title="Магия камней">Магия камней</a>
       <a class="nav-link nav-list-link" href="/mustarot" title="Музыкальное Таро">МузТаро</a>
       <a class="nav-link nav-list-link" href="/projector" title="Астральный Проектор">Астральный Проектор</a>
     </div>
-    <div class="flex-center">
+    <div class="nav-icons">
       <a class="nav-link" href="https://youtube.com/c/BlackCatTarotsociety" rel="noreferrer nofollow" target="_blank" title="YouTube-канал Black Cat Tarot">
         <svg class="nav-icon"><use href="/img/youtube.svg?v=1#svg"/></svg>
       </a>
@@ -41,7 +42,7 @@
         <svg class="nav-icon"><use href="/img/zen.svg?v=1#svg"/></svg>
       </a>
     </div>
-    <div class="hr-gradient"></div>
+    <div class="separator"></div>
   </nav>
 </header>
 <main class="main">

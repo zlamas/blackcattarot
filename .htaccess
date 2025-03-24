@@ -3,6 +3,7 @@ BrowserMatchNoCase BackupLand bad_bot
 BrowserMatchNoCase Bytespider bad_bot
 BrowserMatchNoCase CensysInspect bad_bot
 BrowserMatchNoCase ChatGPT bad_bot
+BrowserMatchNoCase ClaudeBot bad_bot
 BrowserMatchNoCase DataForSeoBot bad_bot
 BrowserMatchNoCase GPTBot bad_bot
 BrowserMatchNoCase InternetMeasurement bad_bot

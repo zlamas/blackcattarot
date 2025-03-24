@@ -1,4 +1,4 @@
 <?php
 
-$page = 'main';
+$page = 'index';
 require_once 'content.php';
