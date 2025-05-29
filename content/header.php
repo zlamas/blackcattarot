@@ -1,4 +1,3 @@
-<?php require_once $_SERVER['DOCUMENT_ROOT'].'/counter/counter.php' ?>
 <!doctype html>
 <html lang="ru">
 <title><?php if ($title !== '') echo $title.' - ' ?>Официальный сайт таролога Екатерины Нагорной | Таро-консультации, обучение картам Таро</title>
@@ -13,7 +12,7 @@
 <link rel="manifest" href="manifest.json">
 <link rel="preload" href="/fonts/edo.woff2" as="font" crossorigin>
 <link rel="stylesheet" href="/css/common.css?v=2">
-<link rel="stylesheet" href="/css/main.css?v=11">
+<link rel="stylesheet" href="/css/main.css?v=12">
 
 <header class="header">
   <input class="nav-menu-toggle" id="menu-toggle" type="checkbox">

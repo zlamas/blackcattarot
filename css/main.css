@@ -625,6 +625,9 @@ details[open] .btn-expand::after {
 .decoration-5::before {
   background-image: url(/img/gallery/decorations/decoration5.jpg);
 }
+.decoration-6::before {
+  background-image: url(/img/gallery/decorations/decoration6.jpg);
+}
 .text-center {
   text-align: center;
 }

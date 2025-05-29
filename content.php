@@ -34,6 +34,7 @@ if (!file_exists($content_dir.$page.'.html')) {
 $title = $titles[$page] ?? '';
 $description = $descriptions[$page] ?? '';
 
+require_once $_SERVER['DOCUMENT_ROOT'].'/counter/counter.php';
 require_once $content_dir.'header.php';
 require_once $content_dir.$page.'.html';
 require_once $content_dir.'footer.php';
