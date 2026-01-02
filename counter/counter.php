@@ -2,17 +2,27 @@
 
 session_start();
 
-$counter = __DIR__ . '/hits.txt';
-$counter_unique = __DIR__ . '/hits_unique.txt';
+$counter = fopen(__DIR__ . '/hits.txt', 'c+');
+$counter_unique = fopen(__DIR__ . '/hits_unique.txt', 'c+');
 
-$hits = file_get_contents($counter);
-$unique_hits = file_get_contents($counter_unique);
+$hits = stream_get_contents($counter);
+$unique_hits = stream_get_contents($counter_unique);
+
+rewind($counter);
+rewind($counter_unique);
 
 $hits++;
-file_put_contents($counter, $hits);
+if (flock($counter, LOCK_EX)) {
+    fwrite($counter, $hits);
+}
+fclose($counter);
 
 if (!isset($_SESSION['counter'])) {
     $_SESSION['counter'] = true;
     $unique_hits++;
-    file_put_contents($counter_unique, $unique_hits);
+    if (flock($counter_unique, LOCK_EX)) {
+        fwrite($counter_unique, $unique_hits);
+    }
 }
+
+fclose($counter_unique);

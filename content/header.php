@@ -1,3 +1,4 @@
+<?php require_once $_SERVER['DOCUMENT_ROOT'].'/counter/counter.php' ?>
 <!doctype html>
 <html lang="ru">
 <title><?php if ($title !== '') echo $title.' - ' ?>Официальный сайт таролога Екатерины Нагорной | Таро-консультации, обучение картам Таро</title>
